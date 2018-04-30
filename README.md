@@ -11,3 +11,8 @@ The aglorithms are desinged to replicate the way a computer numerically analysis
     
 **Simpson**
     The function Simpson is designed to determine the integral of a series of data points using the Simpson's 1/3 rule. Should there be an odd number of data points, then the funtion will use the trapazoidal method for the final interval of the given data points. The function relies on 2 series of data points of equal length to be provided. The algorithm will then evaluate whether or not the data can be used and will return the integral.
+
+**Heun**
+    The Heun function is designed to replicate the modified Euler's Method. It opperates with the given parameters of the dy/dx function, 
+an initial condition, the bounds, step size, and an optional input of both the estimated error and max number of iterations. The function 
+is designed to have a corrective step size if the step size does not fit the provided bounds properly. When finished the algorithm will plot the stored data points to display the estimated polynomial.
