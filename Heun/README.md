@@ -1,5 +1,5 @@
 # Heun
-    The heun function relies on the the input of the dy/dx function, the initial condition, the bounds, step size, and the optional
+   The heun function relies on the the input of the dy/dx function, the initial condition, the bounds, step size, and the optional
 estimated error as well as the max number of iterations. Given this information, the algorithm will resize the final step size if it 
 does not properly fit the bounds and then create a vector containing the data points based of the step size from the lower bound to 
 the upper bound. Using the initial condition the algorithm will then determine the left side slope. Given the left slope, the function 
