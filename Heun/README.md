@@ -1,13 +1,10 @@
-# Numerical-Method-Algorithms
-Mechanical Engineering Class 105 Projects Using MATLAB
-
-The aglorithms are desinged to replicate the way a computer numerically analysis data to further our understanding of the computaional process.
-
-**falsePosition**
-    The falsePosition test a seiries of values with the given inputs to return an estimate for the root of the function. The falsePosition function uses a bracketing method that is designed to always work. The function may be slower than other methods, but it will produce reliable results.
-  
-**luFactor**
-    The function luFactor is designed to take a square matrix of coefficient values and return the lower triangular matrix, upper triangular matrix, and the pivot matrix. The function uses a combination of the Gauss elimination and partial pivoting to produce a series of matricies that together create the identity matrix of the original data values. This function is particurly useful when working with a closed system and several of the coefficients must be adjusted but the final product remains the same or vice versa.
-    
-**Simpson**
-    The function Simpson is designed to determine the integral of a series of data points using the Simpson's 1/3 rule. Should there be an odd number of data points, then the funtion will use the trapazoidal method for the final interval of the given data points. The function relies on 2 series of data points of equal length to be provided. The algorithm will then evaluate whether or not the data can be used and will return the integral.
+# Heun
+    The heun function relies on the the input of the dy/dx function, the initial condition, the bounds, step size, and the optional
+estimated error as well as the max number of iterations. Given this information, the algorithm will resize the final step size if it 
+does not properly fit the bounds and then create a vector containing the data points based of the step size from the lower bound to 
+the upper bound. Using the initial condition the algorithm will then determine the left side slope. Given the left slope, the function 
+then predicts values to determine the right slope. Using both the left and right side slopes a corrector is then used to determine 
+the y value at that point. This process is then repeated until either the value of the estimated error is met or the max number of
+iterations. the y value is then stored in a vector. The algorithm then moves to the next step size and repeats the proccess until all
+values in the step size 't' vector have been evaluated. The then stored t and y values are plotted on a graph for the user to view the 
+approximated polynomial function.
